@@ -12,7 +12,7 @@ BOT_TOKEN = ‘8632120800:AAEOBHQ8A4vJyu2ovH8uEBbiS5bboFFJJ3k’
 REPLICATE_TOKEN = ‘r8_2iazjxaLWCrgbQHr5Rbvon8AhArGfEl0yOXfS’
 
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(**name**)
+logger = logging.getLogger(__name__)
 
 bot = Bot(token=BOT_TOKEN, parse_mode=ParseMode.HTML)
 dp = Dispatcher(storage=MemoryStorage())
@@ -27,7 +27,7 @@ await message.answer(
 
 @dp.message(F.photo)
 async def handle_photo(message: types.Message):
-await message.answer(‘Обрабатываю фото, подождите 20-40 секунд…’)
+await message.answer(‘Обрабатываю фото, подождите 20-40 секунд...’)
 
 ```
 photo = message.photo[-1]
@@ -107,5 +107,5 @@ async def main():
 logger.info(‘Bot started’)
 await dp.start_polling(bot)
 
-if **name** == ‘**main**’:
+if __name__ == ‘__main__’:
 asyncio.run(main())
