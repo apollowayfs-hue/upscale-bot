@@ -9,8 +9,8 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.enums import ParseMode
 
-BOT_TOKEN = “8632120800:AAEOBHQ8A4vJyu2ovH8uEBbiS5bboFFJJ3k”
-REPLICATE_TOKEN = “r8_2iazjxaLWCrgbQHr5Rbvon8AhArGfEl0yOXfS”
+BOT_TOKEN = "8632120800:AAEOBHQ8A4vJyu2ovH8uEBbiS5bboFFJJ3k"
+REPLICATE_TOKEN = "r8_2iazjxaLWCrgbQHr5Rbvon8AhArGfEl0yOXfS"
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(**name**)
